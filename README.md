@@ -1,1 +1,1 @@
-# webpack-site-schema
+# Gulp Site Schema
