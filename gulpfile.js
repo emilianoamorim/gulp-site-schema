@@ -18,8 +18,8 @@ gulp.task('start', (done) => {
       const tasks = []
       if (!changedFiles) return tasks;
       changedFiles.forEach((file) => {
-        if (path.extname(file) === '.js' && !~tasks.indexOf('scripts')) tasks.push('scripts')
-        if (path.extname(file) === '.scss' && !~tasks.indexOf('sass')) tasks.push('sass')
+        if (path.extname(file) === '.js' && !~tasks.indexOf('dev-scripts')) tasks.push('dev-scripts')
+        if (path.extname(file) === '.scss' && !~tasks.indexOf('dev-sass')) tasks.push('dev-sass')
       })
       return tasks
     }
